@@ -109,6 +109,9 @@ header {
   background-position: center center;
   height: calc(100vh - 143px);
   position: relative; }
+  @media screen and (max-width: 767px) {
+    .main_banner {
+      background-position: right; } }
   .main_banner .container {
     position: relative;
     height: calc(100vh - 143px);

@@ -162,7 +162,9 @@ header {
   background-position: center center;
   height: calc(100vh - 143px);
   position: relative;
-
+  @include max-screen(767px){
+    background-position: right;
+  }
   .container {
     position: relative;
     height: calc(100vh - 143px);

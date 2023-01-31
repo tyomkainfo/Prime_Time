@@ -66,7 +66,7 @@ header {
       margin-left: 10px; } }
   @media screen and (max-width: 767px) {
     header .navbar .nav-item {
-      margin: 10px 0; } }
+      margin: 10px 5px; } }
       header .navbar .nav-item .nav-link {
         font-family: 'Gilroy-Bold';
         font-style: normal;
@@ -339,3 +339,249 @@ header {
         width: 5px;
         height: 8px;
         margin-right: 10px; }
+
+.reviews {
+  padding: 80px 0 90px;
+  background-color: #F8F8F8; }
+  .reviews h2 {
+    font-family: 'Gilroy-Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 110%;
+    letter-spacing: 0.01em;
+    color: #3A3A3A;
+    margin-bottom: 30px; }
+  .reviews blockquote img {
+    max-width: 174px;
+    margin-bottom: 30px; }
+  @media screen and (max-width: 767px) {
+    .reviews blockquote img {
+      margin: auto;
+      margin-bottom: 30px; } }
+  .reviews blockquote .reviews_star {
+    display: flex;
+    align-items: center; }
+    .reviews blockquote .reviews_star img {
+      width: 20px;
+      height: 20px;
+      margin-right: 4px;
+      margin-bottom: 0;
+      margin: inherit; }
+  .reviews blockquote .date {
+    display: inline-block;
+    margin-left: 16px;
+    font-family: 'Gilroy-Medium';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 140%;
+    letter-spacing: 0.02em;
+    color: #3A3A3A; }
+  .reviews blockquote h4 {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    font-family: 'Gilroy-Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 110%;
+    letter-spacing: 0.04em;
+    color: #3A3A3A; }
+  .reviews blockquote p {
+    font-family: 'Gilroy-Medium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 140%;
+    letter-spacing: 0.02em;
+    color: #3A3A3A;
+    max-width: 406px; }
+  .reviews .owl-nav {
+    display: none; }
+  .reviews .owl-dots {
+    text-align: center;
+    padding-top: 50px; }
+    .reviews .owl-dots .owl-dot span {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      background-color: #D9D9D9;
+      border-radius: 50px;
+      margin: 5px; }
+    .reviews .owl-dots .owl-dot.active span {
+      background-color: #5CAF57; }
+
+.faq {
+  padding: 80px 0;
+  background-color: #FFFFFF; }
+  .faq h3 {
+    font-family: 'Gilroy-Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 110%;
+    letter-spacing: 0.01em;
+    color: #3A3A3A;
+    margin-bottom: 30px; }
+  .faq .container {
+    max-width: 900px; }
+  .faq .accordion-item {
+    border: none;
+    border-bottom: solid 1px #ECECEC;
+    padding: 0; }
+  .faq .accordion-button {
+    padding: 30px 0 34px;
+    font-family: 'Gilroy-Medium';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 110%;
+    letter-spacing: 0.01em;
+    color: #000000;
+    border: none; }
+    .faq .accordion-button:focus {
+      outline: none;
+      box-shadow: none; }
+  .faq .accordion-button:not(.collapsed) {
+    background-color: transparent;
+    font-family: 'Gilroy-Medium';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 110%;
+    letter-spacing: 0.01em;
+    color: #000000;
+    border: none; }
+    .faq .accordion-button:not(.collapsed):focus {
+      outline: none;
+      box-shadow: none; }
+  .faq .accordion-body {
+    padding-left: 0;
+    padding-right: 0;
+    font-family: 'Gilroy-Medium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 140%;
+    letter-spacing: 0.02em;
+    color: #3A3A3A; }
+  .faq .accordion-item:first-of-type .accordion-button {
+    border: none;
+    box-shadow: none; }
+  .faq .accordion-button::after {
+    background-image: url("../images/add.svg");
+    width: 14px;
+    height: 14px;
+    background-size: contain; }
+
+.qoute {
+  background-color: #000000;
+  padding: 80px 0; }
+  .qoute h2 {
+    font-family: 'Gilroy-Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 110%;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+    margin-bottom: 20px; }
+  .qoute p {
+    font-family: 'Gilroy-Medium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 140%;
+    color: #FFFFFF; }
+  .qoute form {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+  .qoute .form-label {
+    font-family: 'Gilroy-Medium';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 110%;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    display: inline-block;
+    margin-bottom: 10px; }
+  .qoute .form-control {
+    background: #FFFFFF;
+    border-radius: 0;
+    height: 40px;
+    line-height: 40px;
+    width: 100%;
+    display: block;
+    font-family: 'Gilroy-Medium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: #3A3A3A;
+    opacity: 1;
+    border: none; }
+  .qoute textarea {
+    resize: none;
+    height: 120px !important; }
+  .qoute .form-group {
+    width: 49%;
+    margin-bottom: 20px; }
+  @media screen and (max-width: 767px) {
+    .qoute .form-group {
+      width: 100%; } }
+  .qoute .btn-primary {
+    background-color: #5CAF57;
+    width: 100%;
+    border: none;
+    border-radius: 0;
+    padding: 0;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    font-family: 'Gilroy-Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    text-transform: uppercase; }
+    .qoute .btn-primary:before {
+      content: "";
+      display: inline-block;
+      background-image: url("../images/arrow_right_alt_white.svg");
+      width: 15px;
+      height: 11px;
+      margin-right: 10px; }
+
+footer {
+  background-color: #151515; }
+  footer .copyright {
+    line-height: 34px;
+    background: #3A3A3A;
+    font-family: 'Gilroy-Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 11px;
+    color: #9E9E9E; }
+    footer .copyright a {
+      display: inline-block;
+      font-family: 'Gilroy-Bold';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 11px;
+      color: #9E9E9E;
+      margin-left: 10px;
+      text-decoration: none; }
+  footer .information_block {
+    padding: 75px 0; }
+    footer .information_block p {
+      font-family: 'Gilroy-Bold';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 11px;
+      line-height: 130%;
+      color: #8F8F8F;
+      margin-bottom: 20px; }

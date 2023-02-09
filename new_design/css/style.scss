@@ -1,0 +1,146 @@
+@mixin max-screen($res) {
+  @media screen and (max-width: $res) {
+    @content;
+  }
+}
+
+body {
+  background-color: white;
+}
+
+header {
+  position: absolute;
+  width: 100%;
+  padding-top: 4%;
+  .bg-dark {
+    --bs-bg-opacity: 1;
+    background-color: transparent !important;
+  }
+
+  .navbar {
+    padding: 10px 0;
+
+    .navbar-brand {
+      padding: 0;
+      @include max-screen(767px) {
+        max-width: 180px;
+        img {
+          width: 100%;
+        }
+      }
+    }
+
+    .nav-item {
+      margin-left: 20px;
+      @include max-screen(1400px) {
+        margin-left: 40px;
+      }
+      @include max-screen(1199px) {
+        margin-left: 10px;
+      }
+      @include max-screen(767px) {
+        margin: 10px 5px;
+      }
+
+      .nav-link {
+        font-family: 'Poppins', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+        color: #FFFFFF;
+        padding: 0;
+        transition: 0.3s;
+        @include max-screen(1199px) {
+          font-size: 10px;
+        }
+
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+
+      &:last-of-type {
+        margin-left: 24px;
+        @include max-screen(767px) {
+          margin-left: 0;
+        }
+
+        .nav-link {
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 27px;
+          padding: 10px 30px;
+          text-align: justify;
+          background-color: #E92525;
+          display: inline-flex;
+          align-items: center;
+        }
+      }
+    }
+  }
+  .navbar-toggler {
+    border-color: white;
+  }
+  .navbar-collapse{
+    @include max-screen(900px){
+      background-color: black;
+    }
+  }
+}
+
+.main_banner {
+  background-image: url("../images/main_bg.png");
+  background-size: cover;
+  height: 102vh;
+  background-position: left bottom;
+  box-sizing: border-box;
+  padding-top: 14%;
+  @include max-screen(900px){
+    padding-top: 200px;
+  }
+  @include max-screen(767px){
+    padding-top: 170px;
+    height: auto;
+  }
+  h1 {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 84px;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+    @include max-screen(767px) {
+      font-size: 36px;
+      line-height: 44px;
+    }
+    span {
+      color: rgba(233, 37, 37, 1);
+    }
+  }
+
+  h3 {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 51px;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+    @include max-screen(767px) {
+      font-size: 24px;
+      line-height: 31px;
+    }
+  }
+  p{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #FFFFFF;
+  }
+}
+
+

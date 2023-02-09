@@ -1,0 +1,111 @@
+body {
+  background-color: white; }
+
+header {
+  position: absolute;
+  width: 100%;
+  padding-top: 4%; }
+  header .bg-dark {
+    --bs-bg-opacity: 1;
+    background-color: transparent !important; }
+  header .navbar {
+    padding: 10px 0; }
+    header .navbar .navbar-brand {
+      padding: 0; }
+  @media screen and (max-width: 767px) {
+    header .navbar .navbar-brand {
+      max-width: 180px; }
+      header .navbar .navbar-brand img {
+        width: 100%; } }
+    header .navbar .nav-item {
+      margin-left: 20px; }
+  @media screen and (max-width: 1400px) {
+    header .navbar .nav-item {
+      margin-left: 40px; } }
+  @media screen and (max-width: 1199px) {
+    header .navbar .nav-item {
+      margin-left: 10px; } }
+  @media screen and (max-width: 767px) {
+    header .navbar .nav-item {
+      margin: 10px 5px; } }
+      header .navbar .nav-item .nav-link {
+        font-family: 'Poppins', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+        color: #FFFFFF;
+        padding: 0;
+        transition: 0.3s; }
+  @media screen and (max-width: 1199px) {
+    header .navbar .nav-item .nav-link {
+      font-size: 10px; } }
+        header .navbar .nav-item .nav-link:hover {
+          transform: scale(1.1); }
+      header .navbar .nav-item:last-of-type {
+        margin-left: 24px; }
+  @media screen and (max-width: 767px) {
+    header .navbar .nav-item:last-of-type {
+      margin-left: 0; } }
+        header .navbar .nav-item:last-of-type .nav-link {
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 27px;
+          padding: 10px 30px;
+          text-align: justify;
+          background-color: #E92525;
+          display: inline-flex;
+          align-items: center; }
+  header .navbar-toggler {
+    border-color: white; }
+  @media screen and (max-width: 900px) {
+    header .navbar-collapse {
+      background-color: black; } }
+
+.main_banner {
+  background-image: url("../images/main_bg.png");
+  background-size: cover;
+  height: 102vh;
+  background-position: left bottom;
+  box-sizing: border-box;
+  padding-top: 14%; }
+  @media screen and (max-width: 900px) {
+    .main_banner {
+      padding-top: 200px; } }
+  @media screen and (max-width: 767px) {
+    .main_banner {
+      padding-top: 170px;
+      height: auto; } }
+  .main_banner h1 {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 84px;
+    color: #FFFFFF;
+    margin-bottom: 20px; }
+  @media screen and (max-width: 767px) {
+    .main_banner h1 {
+      font-size: 36px;
+      line-height: 44px; } }
+    .main_banner h1 span {
+      color: #e92525; }
+  .main_banner h3 {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 51px;
+    color: #FFFFFF;
+    margin-bottom: 20px; }
+  @media screen and (max-width: 767px) {
+    .main_banner h3 {
+      font-size: 24px;
+      line-height: 31px; } }
+  .main_banner p {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #FFFFFF; }
